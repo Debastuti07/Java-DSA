@@ -12,6 +12,13 @@ public class ArithmaticOperations {
         double a=39;
         double b=10;
         System.out.println(a/b);//3.9 
+        System.out.println(a%b);//9
     }
 
 }
+
+//modullus operator 
+// if a%b and a<b the "a" will be the answer 
+
+//  a%(-b) = a%b 
+// (-a)%b= -(a%b)
