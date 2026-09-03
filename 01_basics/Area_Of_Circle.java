@@ -16,3 +16,4 @@ public class Area_Of_Circle {
 
     }
 }
+//u can use Math.PI instead of 3.14 for the accurate value 
