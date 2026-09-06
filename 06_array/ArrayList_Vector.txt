@@ -1,0 +1,4 @@
+Arraylist=> Dynamic array
+
+array problem=> fixed size
+

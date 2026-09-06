@@ -1,0 +1,14 @@
+Array
+1. Two Sum
+2. Reverse Array
+3. Rotate Array
+4. Max Element in Array
+5. Second Max Element in Array
+6. Find Missing Element in Array
+7. Sort Array
+8. Segregate 0’s and 1’s
+9. Wave Array
+10.Adding one 
+11. Add two arrays 
+12. Merge Two Sorted Array
+
