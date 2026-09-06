@@ -193,7 +193,7 @@ sout("Hello");
 
 
 ```java
-// **Ques: Calculate the time complexity
+// Ques: Calculate the time complexity
 
 for(int i = 1; i*i <= n; i++) {
     sout("Hello");
@@ -204,7 +204,7 @@ for(int i = 1; i*i <= n; i++) {
 
 
 ```java
-// **Ques: Calculate the time complexity
+// Ques: Calculate the time complexity
 
 for(int i = 1; i*i <= n; i*=2) {
     sout("Hello");
