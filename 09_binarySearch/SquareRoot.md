@@ -31,6 +31,9 @@ class Solution {
         // code here
         int start=1;
         int end=n;
+        if(n==0){
+            return 0;
+        }
         while(start<=end){
             int mid=start+(end-start)/2;
             
