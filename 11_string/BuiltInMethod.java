@@ -15,6 +15,6 @@ public class BuiltInMethod {
         String s="meghna";
         s.toUpperCase();
         System.out.println(s);//cant change ..string is immutable 
-        
+        System.out.println(str.concat(s));
     }
 }
