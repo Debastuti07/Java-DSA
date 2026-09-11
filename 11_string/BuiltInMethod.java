@@ -16,5 +16,6 @@ public class BuiltInMethod {
         s.toUpperCase();
         System.out.println(s);//cant change ..string is immutable 
         System.out.println(str.concat(s));
+        System.out.println(str.equals(s));//campare letter by letter
     }
 }

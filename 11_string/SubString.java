@@ -8,5 +8,6 @@ public class SubString {
         String s="Debastuti";
         System.out.println(s.substring(4));//stuti
         System.out.println(s.substring(4,9));//stuti
+
     }
 }
