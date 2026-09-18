@@ -24,15 +24,15 @@ public class MergeTwoSortedArray {
             else{
                 c[k++]=b[j++];
             }
-           
-               while(j<b.length){//i completed 
-                  c[k++]=b[j++];
-               }
             
-            while(i<a.length){//j completed
-                c[k++]=a[i++];
+        }
+        
+            while(j<b.length){//i completed 
+               c[k++]=b[j++];
             }
-            
+         
+         while(i<a.length){//j completed
+             c[k++]=a[i++];
          }
     }
 }
