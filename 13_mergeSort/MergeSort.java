@@ -33,7 +33,7 @@ public class MergeSort {
          int i=0,j=0,k=0;
 
          while (i<a.length && j<b.length) {
-            if(a[i]<b[j]){
+            if(a[i]<=b[j]){
                 c[k++]=a[i++];
             }
             else{
@@ -51,3 +51,6 @@ public class MergeSort {
      }
     }
 }
+//merge sort technique is divide and conquer technique
+// time complexity O(nlog n)
+// space complexityO(nlog n)/O(n)...somethime we delete it after return but in java there is no such option 
