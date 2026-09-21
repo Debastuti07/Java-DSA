@@ -26,3 +26,8 @@ Car(){
 Car(int x){
     x=50;
 }
+```
+## abstraction
+- data hiding 
+## inheritance
+- inherit the property of parent class to the child class 

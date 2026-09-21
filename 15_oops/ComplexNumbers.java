@@ -1,8 +1,8 @@
 class Complex{
-    int x;
-    int y;
+    double x;
+    double y;
 
-    Complex(int x,int y){
+    Complex(double x,double y){
          this.x=x;
          this.y=y;
     }
@@ -13,16 +13,29 @@ class Complex{
         System.out.println(x+" - "+(-y)+"i");
        }
     }
-//add two number 
-    void add(Complex c2)
+// add two number 
+    void add(Complex c)
     {
-        this.x+=c2.x;
-        this.y+=c2.y;
+        x+=c.x;
+        y+=c.y;
     }
+
+    void multiply(Complex c){
+        double temp=x;
+        x= x*c.x - y*c.y;
+        y=temp*c.y + y*c.x;
+    }
+    void divide(Complex c){
+     double denominator = c.x * c.x + c.y * c.y;
+      double temp=x;
+       x = (x * c.x + y * c.y) /  denominator;
+       y=(y*c.x - temp*c.y)/  denominator ;
+    }
+
 }
 public class ComplexNumbers {
     public static void main(String[] args) {
-        Complex c1=new Complex(2,-5);
+        Complex c1=new Complex(2,-15);
         Complex c2=new Complex(3,5);
         c1.print();
         c2.print();
@@ -30,6 +43,18 @@ public class ComplexNumbers {
         c1.add(c2);
 
         c1.print();
+        c2.print();
+
+        c2.multiply(c1);
+        c2.print();
+
+
+        c1.print();
+        c2.print();
+
+        c1.divide(c2);
+        c1.print();
+
 
     }
 }
