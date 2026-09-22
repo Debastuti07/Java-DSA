@@ -49,7 +49,19 @@ public class NodeOfLL {
         System.out.println(c);
         System.out.println(a.next.next.next.val);
         // display(a);
-        displayRec(a);
+        // displayRec(a);
+        System.out.println(get(a,2));
+        // Node n=null; 
+        // System.err.println(n.val);//null pointer exception
+
+    }
+
+    private static int get(Node head,int idx){
+        Node temp=head;
+        for(int i=1;i<=idx;i++){
+            head=head.next;
+        }
+        return head.val;
     }
     
 }
