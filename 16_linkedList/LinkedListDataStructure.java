@@ -19,9 +19,9 @@ class LL{//user defined data structure
      int get(int idx){
         Node temp=head;
         for(int i=1;i<=idx;i++){
-            head=head.next;
+            temp=temp.next;
         }
-        return head.val;
+        return temp.val;
     }
 
 
@@ -113,7 +113,7 @@ class LL{//user defined data structure
 
    //add in a particular index
    void insert(int val,int idx){
-       if(idx<0||idx>size){
+       if(idx<0||idx>=size){
         System.out.println("invalid index");
         return ;
        }
@@ -127,7 +127,7 @@ class LL{//user defined data structure
        }
        else{
        Node temp=head;
-       for(int i=0;i<idx-1;i++){
+       for(int i=0;i<=idx-1;i++){
         temp=temp.next;
 
        }
@@ -139,7 +139,28 @@ class LL{//user defined data structure
    }
 
    //delete element from a particular idx
-   
+   void delete(int idx){
+    if(idx<0 || idx>size){
+        System.out.println("invalid index");
+        return ;
+    }
+    if(idx==0){
+        deleteAtHead();
+        return;
+    }
+    if(idx==size-1)
+    {
+        deleteFromEnd();
+        return ;
+    }
+       Node temp=head;
+       for(int i=0;i<idx-1;i++){
+        temp=temp.next;
+       }
+       temp.next=temp.next.next;
+       tail=temp;
+       size--;
+   }
     
 }
 public class LinkedListDataStructure {
@@ -160,11 +181,14 @@ public class LinkedListDataStructure {
         l1.deleteFromEnd();
         l1.display();
 
-        // System.out.println(l1.search(20));
+        System.out.println(l1.search(20));
 
         l1.insert(60, 1);
         l1.display();
         
         System.out.println(l1.get(2));
+
+        l1.delete(3);
+        l1.display();
     }
 }
