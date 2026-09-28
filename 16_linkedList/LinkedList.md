@@ -1,9 +1,33 @@
+# Singly Linked List
+
+
 ```mermaid
 flowchart LR
-    A["7 | y240"] --> B["12 | x420"] --> C["29 | a247"] --> D["84 | NULL"]
-    classDef node fill:white,stroke:black,color:black;
-    classDef label fill:none,stroke:none,color:#ff69b4;
+    HEAD["HEAD"] --> A["10"]
+    A --> B["20"]
+    B --> C["30"]
+    C --> NULL["NULL"]
 ```
 
 ### limitations
 - get is O(n) time
+
+# Circular Linked List
+A circular linked list is a linked list where the last node points back to the first node.
+
+```mermaid
+flowchart LR
+    HEAD["HEAD"] --> A["10"]
+    A --> B["20"]
+    B --> C["30"]
+    C --> A
+```
+## Structure
+
+```text
+10 → 20 → 30
+↑           ↓
+└───────────┘
+```
+
+The `next` of the last node points to `head` instead of `null`.
