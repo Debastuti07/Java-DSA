@@ -31,3 +31,32 @@ flowchart LR
 ```
 
 The `next` of the last node points to `head` instead of `null`.
+
+# Doubly Linked List
+
+```text
+             HEAD
+               ↓
+
+      ┌────────┬────────┬────────┐
+NULL  │  PREV  │  DATA  │  NEXT  │
+  ──→ │  NULL  │   2    │   N2   │
+      └────────┴────────┴────────┘
+                   ⇅
+      ┌────────┬────────┬────────┐
+      │  PREV  │  DATA  │  NEXT  │
+      │   N1   │   4    │   N3   │
+      └────────┴────────┴────────┘
+                   ⇅
+      ┌────────┬────────┬────────┐
+      │  PREV  │  DATA  │  NEXT  │
+      │   N2   │   6    │   N4   │
+      └────────┴────────┴────────┘
+                   ⇅
+      ┌────────┬────────┬────────┐
+      │  PREV  │  DATA  │  NEXT  │
+      │   N3   │   8    │  NULL  │
+      └────────┴────────┴────────┘
+                   ↓
+                 TAIL
+```
